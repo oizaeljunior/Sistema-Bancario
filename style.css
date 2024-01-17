@@ -1,0 +1,82 @@
+* {
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+/*
+body { 
+    max-width: 700px;
+    margin: auto;
+}
+*/
+.imagem_usuario{
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+.nome_usuario{
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.telaPrincipal{
+    border: 3px solid;
+    width: 23rem;
+    height: 8rem;
+    
+}
+
+.saldo-olho {
+    display: flex;
+    align-items: center;
+}
+
+.saldo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.btnOlho-fechado {
+    background-color: white;
+    border: none;
+}
+
+.img-olho-fechado {
+    width: 2rem;
+    border-radius: 50%;
+}
+
+.btnExtrato {
+    width: 5rem;
+    height: 2rem;
+    font-size: 1rem;  
+}
+
+.btnTransferir {
+    width: 5rem;
+    height: 2rem;
+    font-size: 1rem;
+}
+
+.btnSacar {
+    width: 5rem;
+    height: 2rem;
+    font-size: 1rem;
+    
+}
+
+.btnDepositar {
+    width: 5rem;
+    height: 2rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
