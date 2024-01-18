@@ -8,6 +8,7 @@ body {
     margin: auto;
 }
 */
+
 .imagem_usuario{
     width: 90px;
     height: 90px;
@@ -28,8 +29,7 @@ body {
 .telaPrincipal{
     border: 3px solid;
     width: 23rem;
-    height: 8rem;
-    
+    height: 8rem;   
 }
 
 .saldo-olho {
@@ -42,6 +42,7 @@ body {
     font-weight: bold;
     margin-top: 1rem;
     margin-left: 1rem;
+    border-bottom: 1px solid;
 }
 
 .btnOlho-fechado {
@@ -58,19 +59,27 @@ body {
     width: 5rem;
     height: 2rem;
     font-size: 1rem;  
+    background-color: #5E17EB;
+    color: white;
+    border-radius: 20px;
 }
 
 .btnTransferir {
     width: 5rem;
     height: 2rem;
     font-size: 1rem;
+    background-color: #5E17EB;
+    color: white;
+    border-radius: 20px;
 }
 
 .btnSacar {
     width: 5rem;
     height: 2rem;
     font-size: 1rem;
-    
+    background-color: #5E17EB;
+    color: white;
+    border-radius: 20px;
 }
 
 .btnDepositar {
@@ -79,4 +88,141 @@ body {
     font-size: 1rem;
     margin-top: 1rem;
     margin-left: 1rem;
+    background-color: #5E17EB;
+    color: white;
+    border-radius: 20px;
 }
+
+/* 
+
+    Tela Depósito 
+
+*/
+
+.telaDeposito {
+    border: 3px solid;
+    width: 22rem;
+    height: 11.2rem; 
+}
+
+.perguntaDeposito {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.txtDeposito {
+    margin-left: 1rem;
+    margin-bottom: 0cm;
+    height: 2rem;
+    width: 20rem;
+    font-weight: bold;
+}
+
+.infoDeposito {
+    margin-top: 0.1cm;
+    margin-left: 1rem;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.btnEfetuarDeposito {
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    margin-left: 18rem;
+}
+
+.imgSeta {
+    width: 100%;
+    height: 100%;
+}
+
+/* 
+
+    Tela Sacar
+
+*/
+
+.telaSaque {
+    border: 3px solid;
+    width: 22rem;
+    height: 11rem; 
+}
+
+.perguntaSaque {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 0;
+}
+
+.saldoDisponivelSaque {
+    margin-top: 0;
+    margin-left: 1rem;
+    font-style: italic;
+}
+
+.txtSaque {
+    margin-left: 1rem;
+    margin-bottom: 0cm;
+    height: 2rem;
+    width: 20rem;
+    font-weight: bold;
+}
+
+.btnEfetuarSaque{
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    margin-left: 18rem;
+    margin-top: 10px;
+}
+
+/* 
+
+    Tela Transferir
+
+*/
+
+.telaTransferir {
+    border: 3px solid;
+    width: 22rem;
+    height: 11rem; 
+}
+
+.perguntaTransferir {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 0;
+}
+
+.saldoDisponivelTransferir {
+    margin-top: 0;
+    margin-left: 1rem;
+    font-style: italic;
+}
+
+.txtTransferir {
+    margin-left: 1rem;
+    margin-bottom: 0cm;
+    height: 2rem;
+    width: 20rem;
+    font-weight: bold;
+}
+
+.btnEfetuarTransferir{
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    margin-left: 18rem;
+    margin-top: 10px;
+}
+

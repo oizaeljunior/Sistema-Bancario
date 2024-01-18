@@ -43,6 +43,21 @@ class ContaBancaria{
     }
 }
 
+function AbrirDeposito() {
+    const urlTela = 'deposito.html';
+    window.open(urlTela);
+}
+
+function AbrirSaque() {
+    const urlTela = 'sacar.html';
+    window.open(urlTela);
+}
+
+function AbrirTransferir() {
+    const urlTela = 'transferir.html';
+    window.open(urlTela);
+}
+
 const conta1 = new ContaBancaria(1, 100);
 const conta2 = new ContaBancaria(2, 200);
 
