@@ -1,13 +1,97 @@
+/*
+    GERAL
+*/
 * {
     font-family: 'Nunito', sans-serif;
     box-sizing: border-box;
 }
-/*
+
 body { 
-    max-width: 700px;
+    max-width: 600px;
     margin: auto;
+    background-color: #5E17EB;
 }
+
+.contorno {
+    border: 10px solid;
+    width: 40rem;
+    height: 55.5rem;
+    background-color: white;
+    border-radius: 8%;
+}
+
+h1 {
+    margin-left: 6rem;
+}
+
+/*
+    BOTÃO VOLTAR    
 */
+
+.voltar {
+    display: flex;
+    align-items: center;
+}
+
+.btnVoltar {
+    margin-left: 2rem;
+    border: none;
+    background-color: white;
+}
+
+/*
+    TELA CRIANDO NOVA CONTA
+*/
+
+.telaNovoPerfil {
+    border: 3px solid;
+    width: 23rem;
+    height: 10rem;   
+    margin-left: 8rem;
+}
+
+.criando {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.seuNome {
+    font-weight: bold;
+    margin-left: 1rem; 
+    margin-bottom: 0;
+}
+
+.txtNome{
+    width: 15rem;
+    margin-left: 1rem;
+    margin-top: 0;
+    height: 2rem;
+    width: 20rem;
+    font-weight: bold;
+}
+
+.btnCriarConta {
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+}
+
+.txtBtn {
+    display: flex;
+    align-items: center;
+}
+
+/*
+    TELA PRINCIPAL/MENU
+*/
+
+.h1menu {
+    margin-left: 11.9rem;
+}
+
 
 .imagem_usuario{
     width: 90px;
@@ -15,6 +99,7 @@ body {
     margin-right: 10px;
     border: 1px solid;
     border-radius: 50%;
+    margin-left: 8rem;
 }
 
 .nome_usuario{
@@ -30,6 +115,7 @@ body {
     border: 3px solid;
     width: 23rem;
     height: 8rem;   
+    margin-left: 8rem;
 }
 
 .saldo-olho {
@@ -45,9 +131,20 @@ body {
     border-bottom: 1px solid;
 }
 
+.btnOlho-aberto {
+    background-color: white;
+    border: none;
+}
+
+.img-olho-aberto {
+    width: 2rem;
+    border-radius: 50%;
+}
+
 .btnOlho-fechado {
     background-color: white;
     border: none;
+    display: none;
 }
 
 .img-olho-fechado {
@@ -93,9 +190,20 @@ body {
     border-radius: 20px;
 }
 
+.btnTelaContaNova {
+    width: 10rem;
+    height: 2rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-left: 14rem;
+    background-color: #5E17EB;
+    color: white;
+    border-radius: 20px;
+}
+
 /* 
 
-    Tela Depósito 
+    TELA DEPÓSITO 
 
 */
 
@@ -103,6 +211,7 @@ body {
     border: 3px solid;
     width: 22rem;
     height: 11.2rem; 
+    margin-left: 8rem;
 }
 
 .perguntaDeposito {
@@ -142,7 +251,7 @@ body {
 
 /* 
 
-    Tela Sacar
+    TELA SACAR
 
 */
 
@@ -150,6 +259,7 @@ body {
     border: 3px solid;
     width: 22rem;
     height: 11rem; 
+    margin-left: 8rem;
 }
 
 .perguntaSaque {
@@ -185,7 +295,7 @@ body {
 
 /* 
 
-    Tela Transferir
+    TELA TRANSFERIR
 
 */
 
@@ -193,6 +303,7 @@ body {
     border: 3px solid;
     width: 22rem;
     height: 11rem; 
+    margin-left: 8rem;
 }
 
 .perguntaTransferir {
@@ -218,6 +329,44 @@ body {
 }
 
 .btnEfetuarTransferir{
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    margin-left: 18rem;
+    margin-top: 10px;
+}
+
+/*
+
+    TELA CHAVE PIX TRANSFERÊNCIA
+
+*/
+
+.telaChavePix {
+    border: 3px solid;
+    width: 22rem;
+    height: 8.7rem; 
+    margin-left: 8rem;
+}
+
+.perguntaChavePix {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 0;
+}
+
+.txtChavePix {
+    margin-left: 1rem;
+    margin-bottom: 0cm;
+    height: 2rem;
+    width: 20rem;
+    font-weight: bold;
+}
+
+.btnEfetuarChavePix {
     width: 50px;
     border-radius: 50%;
     border: none;

@@ -14,33 +14,40 @@
 </head>
 
 <body>
-    <header>
-        <h1>Sistema Bancário</h1>
-    </header>
-
-    <div class="container">
-        <img src="imagens/Avatar.jpg" alt="foto do usuário" class="imagem_usuario">
-        <p class="nome_usuario">Olá usuário!</p>
-    </div>
-
-    <div class="telaPrincipal">
-
-        <div class="saldo-olho">
-            <p class="saldo">Saldo da Conta</p>
-            <button class="btnOlho-fechado"><img src="imagens/olho-fechado.png" alt="" class="img-olho-fechado"></button>
-        </div>
-
-        <div class="botoes">
-            <button type="submit" class="btnDepositar" onclick="AbrirDeposito()">Depositar</button>
-            <button type="submit" class="btnSacar" onclick="AbrirSaque()">Sacar</button>
-            <button type="submit" class="btnTransferir" onclick="AbrirTransferir()">Transferir</button>
-            <button type="submit" class="btnExtrato">Extrato</button>
-        </div>
-
-    </div>
-
     
-    <script src="funcionaliades.js"></script>
+    <div class="contorno"> 
+
+        <header>
+            <h1 class="h1menu">Sistema Bancário</h1>
+        </header>
+        
+        <div class="container">
+            <img src="imagens/Avatar.jpg" alt="foto do usuário" class="imagem_usuario">
+            <p class="nome_usuario">Olá, <span class="nomeUsuario"></span></p>
+        </div>
+        
+        <div class="telaPrincipal">
+            
+            <div class="saldo-olho">
+                <p class="saldo">R$<span class="saldoAtual"></span></p>
+                <button class="btnOlho-aberto" onclick="OlhoFechado()"><img src="imagens/olho-aberto.jpg" alt="" class="img-olho-aberto"></button>
+                <button class="btnOlho-fechado" onclick="OlhoAberto()"><img src="imagens/olho-fechado.png" alt="" class="img-olho-fechado"></button>
+            </div>
+            
+            <div class="botoes">
+                <button type="submit" class="btnDepositar" onclick="AbrirDeposito()">Depositar</button>
+                <button type="submit" class="btnSacar" onclick="AbrirSaque()">Sacar</button>
+                <button type="submit" class="btnTransferir" onclick="AbrirTransferir()">Transferir</button>
+                <button type="submit" class="btnExtrato">Extrato</button>
+            </div>
+            
+        </div>
+
+        <button type="submit" class="btnTelaContaNova" onclick="TelaNovaConta()">Criar nova conta</button>
+        
+    </div>
+
+    <script src="funcionalidades.js"></script>
 </body>
 
 </html>

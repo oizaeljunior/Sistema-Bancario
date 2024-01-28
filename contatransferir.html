@@ -15,22 +15,21 @@
 
 <body>
 
-    <div class="contorno"> 
+    <div class="contorno">
 
         <div class="voltar">           
-            <button type="submit" class="btnVoltar" onclick="VoltarMenu()"><img src="imagens/seta-voltar.png" alt="" class="imgSeta-voltar"></button>         
+            <button type="submit" class="btnVoltar" onclick="AbrirTransferir()"><img src="imagens/seta-voltar.png" alt="" class="imgSeta-voltar"></button>         
             <h1>Sistema Bancário</h1>
         </div>
         
-        <div class="telaTransferir">
-            <p class="perguntaTransferir">Qual é o valor da transferência ?</p>
-            <p class="saldoDisponivelTransferir">Saldo disponível em conta R$0,00</p>
-            <input type="number" placeholder="R$0,00" class="txtTransferir">
-            <button type="submit" class="btnEfetuarTransferir" onclick="TelaChavePix()"><img src="imagens/seta.png" alt="" class="imgSeta"></button>
+        <div class="telaChavePix">
+            <p class="perguntaChavePix">Para quem você quer transferir <span class="valorTransferencia"></span> ?</p>   
+            <input type="text" placeholder="Chave Pix" class="txtChavePix">        
+            <button type="submit" class="btnEfetuarChavePix"><img src="imagens/seta.png" alt="" class="imgSeta"></button>
         </div>
         
     </div>
-    
+
     <script src="funcionalidades.js"></script>
 </body>
 

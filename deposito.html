@@ -14,19 +14,24 @@
 </head>
 
 <body>
-    <header>
-        <h1>Sistema Bancário</h1>
-    </header>
 
-    <div class="telaDeposito">
-        <p class="perguntaDeposito">Qual o valor do depósito ?</p>
-        <input type="number" placeholder="R$0,00" class="txtDeposito">
-        <p class="infoDeposito">Digite um valor entre R$20,00 e R$15.000,00</p>
-        <button type="submit" class="btnEfetuarDeposito"><img src="imagens/seta.png" alt="" class="imgSeta"></button>
+    <div class="contorno">
+        
+        <div class="voltar">           
+            <button type="submit" class="btnVoltar" onclick="VoltarMenu()"><img src="imagens/seta-voltar.png" alt="" class="imgSeta-voltar"></button>         
+            <h1>Sistema Bancário</h1>
+        </div>
+        
+        <div class="telaDeposito">
+            <p class="perguntaDeposito">Qual o valor do depósito ?</p>
+            <input type="number" placeholder="R$0,00" class="txtDeposito">
+            <p class="infoDeposito">Digite um valor entre R$1,00 e R$15.000,00</p>
+            <button type="submit" class="btnEfetuarDeposito" onclick="Deposito()"><img src="imagens/seta.png" alt="" class="imgSeta"></button>
+        </div>
+        
     </div>
-
-
-    <script src="funcionaliades.js"></script>
-</body>
+        
+        <script src="funcionalidades.js"></script>
+    </body>
 
 </html>

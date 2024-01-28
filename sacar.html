@@ -14,18 +14,24 @@
 </head>
 
 <body>
-    <header>
-        <h1>Sistema Bancário</h1>
-    </header>
+    
+    <div class="contorno">
 
-    <div class="telaSaque">
-        <p class="perguntaSaque">Qual o valor do saque ?</p>
-        <p class="saldoDisponivelSaque">Saldo disponível em conta R$0,00</p>
-        <input type="number" placeholder="R$0,00" class="txtSaque">
-        <button type="submit" class="btnEfetuarSaque"><img src="imagens/seta.png" alt="" class="imgSeta"></button>
+        <div class="voltar">           
+            <button type="submit" class="btnVoltar" onclick="VoltarMenu()"><img src="imagens/seta-voltar.png" alt="" class="imgSeta-voltar"></button>         
+            <h1>Sistema Bancário</h1>
+        </div>
+        
+        <div class="telaSaque">
+            <p class="perguntaSaque">Qual o valor do saque ?</p>
+            <p class="saldoDisponivelSaque">Saldo disponível em conta R$<span class="saldoTelaSacar"></span></p>
+            <input type="number" placeholder="R$0,00" class="txtSaque">
+            <button type="submit" class="btnEfetuarSaque" onclick="Sacar()"><img src="imagens/seta.png" alt="" class="imgSeta"></button>
+        </div>
+        
     </div>
 
-    <script src="funcionaliades.js"></script>
+    <script src="funcionalidades.js"></script>
 </body>
 
-</html>
+</html> 

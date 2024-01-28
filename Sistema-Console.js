@@ -15,7 +15,7 @@ class ContaBancaria{
             this.saldo = this.saldo - valor;
             this.historico(`Saque: -${valor} `);
         } else {
-            console.log('Saldo insuficiente!');
+            alert('Saldo insuficiente!');
         }
     }
 
@@ -25,7 +25,7 @@ class ContaBancaria{
             outraConta.depositar(valor);
             this.historico(`Transferência para conta ${outraConta.numero_conta}: ${valor} `);
         } else {
-            console.log('Saldo insuficiente!');
+            alert('Saldo insuficiente!');
         }
     }
 
@@ -41,21 +41,6 @@ class ContaBancaria{
     exibirTransacoes() {
         console.log(`Transações da conta ${this.numero_conta}: ${this.transacoes}`);
     }
-}
-
-function AbrirDeposito() {
-    const urlTela = 'deposito.html';
-    window.open(urlTela);
-}
-
-function AbrirSaque() {
-    const urlTela = 'sacar.html';
-    window.open(urlTela);
-}
-
-function AbrirTransferir() {
-    const urlTela = 'transferir.html';
-    window.open(urlTela);
 }
 
 const conta1 = new ContaBancaria(1, 100);
@@ -75,3 +60,4 @@ conta2.exibirSaldo();
 
 conta1.exibirTransacoes();
 conta2.exibirTransacoes();
+
