@@ -24,6 +24,11 @@ h1 {
     margin-left: 6rem;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 /*
     BOTÃO VOLTAR    
 */
@@ -134,6 +139,7 @@ h1 {
 .btnOlho-aberto {
     background-color: white;
     border: none;
+    cursor: pointer;
 }
 
 .img-olho-aberto {
@@ -145,6 +151,7 @@ h1 {
     background-color: white;
     border: none;
     display: none;
+    cursor: pointer;
 }
 
 .img-olho-fechado {
@@ -195,10 +202,121 @@ h1 {
     height: 2rem;
     font-size: 1rem;
     margin-top: 2rem;
-    margin-left: 14rem;
+    margin-left: 15rem;
     background-color: #5E17EB;
     color: white;
     border-radius: 20px;
+}
+
+/* 
+
+    TELA EXTRATO
+
+*/
+
+.telaHistorico {
+    margin-top: 10px;
+    margin-left: 2rem;
+    width: 35rem;
+    height: 40rem;
+    border: 3px solid;
+    overflow: auto;
+    background-color: #dbdbdb;
+}
+
+.botoesExtrato {
+    display: flex;
+}
+
+#atualizar {
+    width: 7rem;
+    height: 2rem;
+    font-size: 1rem;
+    margin-left: 13rem;
+    margin-top: 20px;
+    margin-bottom: 0;
+    background-color: #5E17EB;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#limpar {
+    width: 7rem;
+    height: 2rem;
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 1rem;
+    background-color: #5E17EB;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.li-deposito {
+    color: green;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.li-saque {
+    color: red;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.li-transferencia {
+    color: blue;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.itens {
+    white-space: nowrap;
+}
+
+.legenda {
+    display: flex;
+    align-items: center;
+    margin-left: 7rem;
+}
+
+#lbl-legenda-deposito {
+    margin-right: 3px;
+    font-weight: 900;
+}
+
+#lbl-legenda-saque {
+    margin-right: 3px;
+    margin-left: 30px;
+    font-weight: 900;
+}
+
+#lbl-legenda-transferencia {
+    margin-right: 3px;
+    margin-left: 30px;
+    font-weight: 900;
+}
+
+
+
+#btn-legenda-deposito {
+    background-color: green;
+    width: 30px;
+    height: 20px;
+}
+
+#btn-legenda-saque {
+    background-color: red;
+    width: 30px;
+    height: 20px;
+}
+
+#btn-legenda-transferencia {
+    background-color: blue;
+    width: 30px;
+    height: 20px;
 }
 
 /* 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Bancário</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Fonte das Letras-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div class="contorno"> 
+
+        <div class="voltar">           
+            <button type="submit" class="btnVoltar" onclick="VoltarMenu()"><img src="imagens/seta-voltar.png" alt="" class="imgSeta-voltar"></button>         
+            <h1>Sistema Bancário</h1>
+        </div>
+
+        <div class="botoesExtrato">
+            <button type="submit" id="atualizar" onclick="ExibirExtrato()">Atualizar 🔄</button>
+            <button type="submit" id="limpar" onclick="LimparExtrato()">Limpar🧹</button>
+        </div>
+
+        <div class="telaHistorico">
+            <ol id="lista-transacao"></ol>
+        </div>
+
+        <div class="legenda">
+            <p id="lbl-legenda-deposito">Depósitos</p>
+            <button id="btn-legenda-deposito"></button>
+            <p id="lbl-legenda-saque">Saques</p>
+            <button id="btn-legenda-saque"></button>
+            <p id="lbl-legenda-transferencia">Transferências</p>
+            <button id="btn-legenda-transferencia"></button>
+        </div>
+
+    </div>
+
+    <script src="funcionalidades.js"></script>
+    
+</body>
+
+</html>

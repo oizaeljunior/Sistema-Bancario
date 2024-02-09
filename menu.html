@@ -30,24 +30,35 @@
             
             <div class="saldo-olho">
                 <p class="saldo">R$<span class="saldoAtual"></span></p>
-                <button class="btnOlho-aberto" onclick="OlhoFechado()"><img src="imagens/olho-aberto.jpg" alt="" class="img-olho-aberto"></button>
-                <button class="btnOlho-fechado" onclick="OlhoAberto()"><img src="imagens/olho-fechado.png" alt="" class="img-olho-fechado"></button>
+                <button class="btnOlho-aberto" onclick="FecharOlho()"><img src="imagens/olho-aberto.jpg" alt="" class="img-olho-aberto"></button>
+                <button class="btnOlho-fechado" onclick="AbrirOlho()"><img src="imagens/olho-fechado.png" alt="" class="img-olho-fechado"></button>
             </div>
             
             <div class="botoes">
-                <button type="submit" class="btnDepositar" onclick="AbrirDeposito()">Depositar</button>
-                <button type="submit" class="btnSacar" onclick="AbrirSaque()">Sacar</button>
-                <button type="submit" class="btnTransferir" onclick="AbrirTransferir()">Transferir</button>
-                <button type="submit" class="btnExtrato">Extrato</button>
-            </div>
+                <button type="submit" class="btnDepositar" onclick="AbrirDeposito()"><a href="#">Depositar</a></button>
+                <button type="submit" class="btnSacar" onclick="AbrirSaque()"><a href="#">Sacar</a></button>
+                <button type="submit" class="btnTransferir" onclick="AbrirTransferir()"><a href="#">Transferir</a></button>
+                <button type="submit" class="btnExtrato" onclick="AbrirExtrato()"><a href="#">Extrato</a></button>
+            </div> 
             
-        </div>
+        </div>  
 
-        <button type="submit" class="btnTelaContaNova" onclick="TelaNovaConta()">Criar nova conta</button>
-        
+        <button type="submit" class="btnTelaContaNova" onclick="TelaNovaConta()"><a href="">Criar nova conta</a></button>
+
     </div>
 
     <script src="funcionalidades.js"></script>
+    
+    <script>
+        
+        // Obtém o valor do span pela classe
+        const spans = document.getElementsByClassName('saldoAtual');
+        const meuValor = spans.length > 0 ? parseFloat(spans[0].innerText) : 0;
+
+        // Armazena o valor no localStorage
+        localStorage.setItem('meuValor', meuValor);
+
+    </script>
 </body>
 
 </html>

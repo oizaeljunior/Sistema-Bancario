@@ -24,14 +24,30 @@
         
         <div class="telaTransferir">
             <p class="perguntaTransferir">Qual é o valor da transferência ?</p>
-            <p class="saldoDisponivelTransferir">Saldo disponível em conta R$0,00</p>
+            <p class="saldoDisponivelTransferir">Saldo disponível em conta R$<span class="saldoTelaTransferir"></span></p>
             <input type="number" placeholder="R$0,00" class="txtTransferir">
-            <button type="submit" class="btnEfetuarTransferir" onclick="TelaChavePix()"><img src="imagens/seta.png" alt="" class="imgSeta"></button>
+            <button type="submit" class="btnEfetuarTransferir" onclick="Transferir()"><img src="imagens/seta.png" alt="" class="imgSeta"></button>
         </div>
         
     </div>
     
     <script src="funcionalidades.js"></script>
+    <script>
+
+        // Obtém o valor armazenado no localStorage
+        const meuValor = parseFloat(localStorage.getItem('meuValor')) || 0;
+
+        // Exibe o valor no span da segunda página pela classe
+        const spansDestino = document.getElementsByClassName('saldoTelaTransferir');
+        if (spansDestino.length > 0) {
+            spansDestino[0].innerText = meuValor.toFixed(2);
+        }
+
+        // Limpa o valor no localStorage (opcional, dependendo dos requisitos da sua aplicação)
+        localStorage.removeItem('meuValor');
+        
+    </script>
+
 </body>
 
 </html>
